@@ -9,19 +9,13 @@ public class MouseToucheSourceMono : MonoBehaviour
     public string m_name= "Mouse Touch Source";
 
     public void Awake()
-    {
-        InteractionGuidRegisterStatic.AddInteractionSource(m_id, this);
-    }
+    {InteractionGuidRegisterStatic.AddInteractionSource(m_id, this); }
 
     public void OnDestroy()
-    {
-        InteractionGuidRegisterStatic.RemoveInteractionSource(m_id);
-    }
-    private void OnMouseDown()
-    {
+    {InteractionGuidRegisterStatic.RemoveInteractionSource(m_id); }
 
-        m_linkedTouchable.SetInteractingSource(m_id, m_name);
-    }
+    private void OnMouseDown()
+    {        m_linkedTouchable.SetInteractingSource(m_id, m_name);   }
     private void OnMouseUp()
     {
         m_linkedTouchable.RemoveInteractingSource(m_id);

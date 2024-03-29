@@ -21,7 +21,24 @@ public class InteractableObjectMono : MonoBehaviour, IInteractableObject
     public List<string> m_hasInteractionId = new List<string>();
     public List<string> m_hasInteractionNameDebug = new List<string>();
     public List<string> m_hasInteractionWithTimeDebug = new List<string>();
+    public bool m_clearOnEnableAndDisable=true;
 
+    public void OnDisable()
+    {
+        if (m_clearOnEnableAndDisable)
+            Clear();
+    }
+    public void OnEnable()
+    {
+        if (m_clearOnEnableAndDisable)
+            Clear();
+    }
+    public void Clear() {
+        foreach (var item in m_interactionObject.Keys.ToArray())
+        {
+            RemoveInteractingSource(item);
+        }
+    }
     public DefaultOnOffBooleanChangeListener m_isInteracting;
     public void SetInteractingSource(string sourceId, string sourceName)
     {

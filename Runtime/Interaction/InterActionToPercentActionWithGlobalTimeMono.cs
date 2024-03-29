@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class AnyInteractionToPercentActionWithGlobalTimeMono: InterActionToPercentActionWithGlobalTimeMono<InteractableObjectMono> { 
 
 }
-
 public class InterActionToPercentActionWithGlobalTimeMono<T> : MonoBehaviour where T: InteractableObjectMono
 {
     public T m_interactionObserved;

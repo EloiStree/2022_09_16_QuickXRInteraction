@@ -1,7 +1,7 @@
 
 {                                                                   
-            "name": "be.eloistree.quickxrinteractionEditor",          
-    "references": ["be.eloistree.quickxrinteraction"
+            "name": "be.elab.quickxrinteractionEditor",          
+    "references": ["be.elab.quickxrinteraction"
 ],                                                              
     "optionalUnityReferences": [],                                  
     "includePlatforms": [                                           

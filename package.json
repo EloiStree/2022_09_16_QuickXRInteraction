@@ -1,30 +1,33 @@
-
-{                                                                                
-  "name": "be.elab.quickxrinteraction",                              
-  "displayName": "QGazeAndAnchor",                        
-  "version": "0.0.1",                         
-  "unity": "2018.1",                             
-  "unityRelease": "",                             
-  "description": "Des interactions blab bal",                         
-  "keywords": ["Script","Tool"],                       
-  "dependencies":{},     
-  "relatedPackages":{},     
- "samples": [
+{
+  "name": "be.elab.quickxrinteraction",
+  "displayName": "Quick XR Interaction",
+  "unity": "2018.1",
+  "unityRelease": "",
+  "description": "Des interactions blab bal",
+  "keywords": [
+    "Script",
+    "Tool"
+  ],
+  "dependencies": {},
+  "relatedPackages": {},
+  "version": "2025.3.25",
+  "samples": [
     {
       "displayName": "Demo Scene",
-      "description": "A sample scene that demonstrates the features of this package.",
+      "description": "Sample scene(s) of this package.",
       "path": "Scene/Demo"
     }
   ],
   "author": {
     "name": "Eloi Stree",
-    "mail": "",
+    "mail": "eloistree@gmail.com",
     "url": "https://github.com/EloiStree/"
-  },  
-  "repository":{
-"type":"Git",
-"url":"https://github.com/EloiStree/2022_09_16_QuickXRInteraction.git",
-"footprint":"",
-"revision":""},     
-  "category": "Script"                   
-} 
+  },
+  "repository": {
+    "type": "Git",
+    "url": "https://github.com/EloiStree/2022_09_16_QuickXRInteraction.git",
+    "footprint": "",
+    "revision": ""
+  },
+  "category": "Script"
+}
